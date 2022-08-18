@@ -1,0 +1,104 @@
+/*---------- FRONT ----------*/
+
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: url('./img/header-bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #fff;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+ }
+
+.container1 {
+    margin: 57px 313px;
+}
+
+/*---------- HEADER ----------*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 57px auto;
+    height: 48px; 
+    position: relative;
+}
+
+.logo {
+   align-items: left;
+}
+
+.menu-item {
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 14px; 
+    transition: all .3s;
+    position: relative;
+
+}
+
+.menu-item:hover:before{
+    transform-origin: left;
+    transform: scaleX(1); /*<--Исходное положение*/
+    transition: transform 0.25s; /*<--Плавный переход*/
+}
+.menu-item:before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: 0; bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: right;
+    -webkit-transition: -webkit-trasform 0.25s;
+    transition: -webkit-transform 0.25s;
+    -o-transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+.tel__right {
+    margin-left: auto;
+    text-align: right;
+}
+
+/*---------- MAIN ----------*/
+
+h3 {
+    font-size: 30px;
+}
+
+h3 span {
+    font-size: 100px;
+}
+
+.main { 
+    justify-content: center;
+    text-align: left;
+    margin-top: 229px;
+}
+
+.button {
+    width: 238px;
+    height: 57px;
+    cursor: pointer;
+    border-radius: 1px;
+    border-color: white;
+    color: white;
+    background-color: transparent;
+    transition: all 150ms ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 0 0 5px 0 white inset, 0 0 10px 4px white;
+}
