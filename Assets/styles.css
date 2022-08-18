@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Anton', sans-serif;
     background: url('./img/header-bg.jpg') no-repeat;
     background-size: cover;
 }
@@ -40,7 +40,6 @@ a {
 
 .menu-item {
     margin-left: 40px;
-    font-weight: bold;
     font-size: 14px; 
     transition: all .3s;
     position: relative;
@@ -79,6 +78,7 @@ h3 {
 }
 
 h3 span {
+    width: 511px;
     font-size: 100px;
 }
 
@@ -89,6 +89,8 @@ h3 span {
 }
 
 .button {
+    font-family: 'Anton';
+    font-size: 17px;
     width: 238px;
     height: 57px;
     cursor: pointer;
