@@ -24,7 +24,7 @@ a {
 }
 
 .container1 {
-    padding: 27px 313px;
+    padding: 27px 20%;
 }
 
 .container2 {
@@ -88,13 +88,14 @@ h3 {
     font-size: 30px;
 }
 
-h3 span {
+.main span {
     width: 511px;
     font-size: 100px;
+    color: #fff;
 }
 
 .main { 
-    justify-content: center;
+    /* justify-content: center; это свойство можно использовать только указав display: flex; */
     text-align: left;
     margin-top: 229px;
 }
@@ -114,15 +115,28 @@ h3 span {
 
 .button:hover {
   box-shadow: 0 0 5px 0 white inset, 0 0 10px 4px white;
+  background: rgb(231, 224, 224, .7);
+  color: #333333;
 }
 
 /*---------- Container 2 ----------*/
 
+.container2 {
+    margin: 60px auto;
+}
+
 .container2 h4{
     color: black;
     font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
 }
 
+.about1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .about1 h5, .about2 h5 {
     color: black;
     font-size: 25px;
@@ -133,20 +147,24 @@ h3 span {
     color: black;
     font-size: 16px;
     width: 564px;
+    margin: 10px auto;
 }
 
 .cnt-about{
     font-family: 'Open Sans';
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 36px;
+    flex-wrap: wrap;
+    /* justify-content: space-between; ошибка: тут контент должен быть по центру, а ты раскидал его*/
 }
 .cnt-about h5{
     font-family: 'Anton';
 }
 .images{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: center; */
+    /* justify-content: space-between; ошибка: тут контент должен быть по центру, а ты раскидал его */
 }
 
 
