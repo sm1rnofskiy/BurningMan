@@ -1,13 +1,11 @@
 /*---------- FRONT ----------*/
 
 body {
-    background: black;
+    background: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Anton', sans-serif;
-    background: url('./img/header-bg.jpg') no-repeat;
-    background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -19,8 +17,21 @@ a {
     text-decoration: none;
  }
 
+.background{
+    height: 1030px;
+    background: url('./img/header-bg(small).jpg') no-repeat;
+    background-size: cover;
+}
+
 .container1 {
-    margin: 57px 313px;
+    padding: 27px 313px;
+}
+
+.container2 {
+    margin: 113px 313px;
+}
+.container3 {
+    margin: 114px 313px;
 }
 
 /*---------- HEADER ----------*/
@@ -71,7 +82,7 @@ a {
     text-align: right;
 }
 
-/*---------- MAIN ----------*/
+/*---------- Container 1 ----------*/
 
 h3 {
     font-size: 30px;
@@ -103,4 +114,59 @@ h3 span {
 
 .button:hover {
   box-shadow: 0 0 5px 0 white inset, 0 0 10px 4px white;
+}
+
+/*---------- Container 2 ----------*/
+
+.container2 h4{
+    color: black;
+    font-size: 50px;
+}
+
+.about1 h5, .about2 h5 {
+    color: black;
+    font-size: 25px;
+}
+
+.about1 p,.about2 p {
+    text-align: justify;
+    color: black;
+    font-size: 16px;
+    width: 564px;
+}
+
+.cnt-about{
+    font-family: 'Open Sans';
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+}
+.cnt-about h5{
+    font-family: 'Anton';
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*---------- FOOTER ----------*/
+
+.footer a{
+    color: black;
+    font-size: 15px;
+}
+
+.footer{
+    display: flex;
+}
+
+.ftr{
+    font-size: 15px;
+    text-align: left; 
+    font-family: 'Open Sans';
+}
+.ftr + .ftr {
+    margin-left: 55px;
 }
